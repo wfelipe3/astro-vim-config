@@ -9,4 +9,30 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "Pocco81/auto-save.nvim",
+    lazy = false,
+  },
+  "EdenEast/nightfox.nvim",
+  "Olical/conjure",
+  {
+    "justinmk/vim-sneak",
+    lazy = false,
+  },
+  {
+    "tpope/vim-surround",
+    lazy = false,
+  },
+  {
+    "michaeljsmith/vim-indent-object",
+    lazy = false,
+  },
+  {
+    "chaoren/vim-wordmotion",
+    lazy = false,
+  },
+  {
+    "itchyny/vim-cursorword",
+    event = "BufRead",
+  },
 }
