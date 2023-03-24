@@ -17,22 +17,42 @@ return {
   "Olical/conjure",
   {
     "justinmk/vim-sneak",
-    lazy = false,
+    event = "BufRead",
   },
-  {
+  { 
     "tpope/vim-surround",
-    lazy = false,
+    event = "BufRead", 
   },
   {
     "michaeljsmith/vim-indent-object",
-    lazy = false,
+    event = "BufRead",
   },
   {
     "chaoren/vim-wordmotion",
-    lazy = false,
+    event = "BufRead",
   },
   {
     "itchyny/vim-cursorword",
     event = "BufRead",
   },
+  {
+    "inkarkat/vim-ReplaceWithRegister",
+    event = "BufRead",
+  },
+  {
+    "junegunn/vim-after-object",
+    event = "BufRead",
+  },
+  {
+    "kurkale6ka/vim-pairs",
+    event = "BufRead",
+  },
+  {
+    "rhysd/clever-f.vim",
+    event = "BufRead",
+  },
+  {
+    "gaving/vim-textobj-argument",
+    event = "BufRead",
+  }
 }
