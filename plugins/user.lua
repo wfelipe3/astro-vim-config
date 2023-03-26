@@ -14,6 +14,7 @@ return {
     lazy = false,
   },
   "EdenEast/nightfox.nvim",
+  "dracula/vim",
   "Olical/conjure",
   {
     "justinmk/vim-sneak",
@@ -40,10 +41,6 @@ return {
     event = "BufRead",
   },
   {
-    "junegunn/vim-after-object",
-    event = "BufRead",
-  },
-  {
     "kurkale6ka/vim-pairs",
     event = "BufRead",
   },
@@ -53,6 +50,10 @@ return {
   },
   {
     "gaving/vim-textobj-argument",
+    event = "BufRead",
+  },
+  {
+    "github/copilot.vim",
     event = "BufRead",
   }
 }
