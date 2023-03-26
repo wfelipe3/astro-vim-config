@@ -24,9 +24,9 @@ return {
     "tpope/vim-surround",
     event = "BufRead", 
   },
-  {
+  { 
     "michaeljsmith/vim-indent-object",
-    event = "BufRead",
+    event = "BufRead", 
   },
   {
     "chaoren/vim-wordmotion",
@@ -54,6 +54,15 @@ return {
   },
   {
     "github/copilot.vim",
-    event = "BufRead",
-  }
+    lazy = false,
+    config = function()
+      vim.g.copilot_no_tab_map = true
+      vim.g.copilot_assume_mapped = true
+      vim.api.nvim_set_keymap("i", "<C-C>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+    end,
+  },
+  {
+    "bounceme/poppy.vim",
+    lazy = false,
+  },
 }
