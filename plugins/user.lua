@@ -2,19 +2,29 @@ return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "BufRead",
+    config = function()
+      require("lsp_signature").setup()
+    end,
+  },
   {
     "Pocco81/auto-save.nvim",
     lazy = false,
   },
   "EdenEast/nightfox.nvim",
   "dracula/vim",
+  "morhetz/gruvbox",
+  "tomasr/molokai",
+  "sonph/onehalf",
+  "chriskempson/base16-vim",
+  "gosukiwi/vim-atom-dark",
+  "rakr/vim-one",
+  "mhartington/oceanic-next",
+  "drewtempelmeyer/palenight.vim",
+  "kyoz/purify",
+  -- "embark-theme/vim",
   "Olical/conjure",
   {
     "justinmk/vim-sneak",
@@ -34,6 +44,7 @@ return {
   },
   {
     "itchyny/vim-cursorword",
+    enabled = false,
     event = "BufRead",
   },
   {
@@ -64,5 +75,9 @@ return {
   {
     "bounceme/poppy.vim",
     lazy = false,
+  },
+  {
+    "phaazon/hop.nvim",
+    event = "BufRead",
   },
 }
