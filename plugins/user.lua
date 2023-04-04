@@ -80,4 +80,31 @@ return {
     "phaazon/hop.nvim",
     event = "BufRead",
   },
+  {
+    "Mohammed-Taher/AdvancedNewFile.nvim",
+    event = "BufRead",
+    config = function()
+      vim.api.nvim_set_keymap("n", "<C-n>", "<cmd>AdvancedNewFile<CR>", {noremap=true})
+    end,
+  },
+  {
+    "folke/zen-mode.nvim",
+    event = "BufRead",
+    config = function()
+      vim.api.nvim_set_keymap("n", "<C-Z>", "<cmd>ZenMode<CR>", {noremap=true})
+    end,
+  },
+  {
+    "akinsho/toggleterm.nvim",
+    opts = {
+      size = 10,
+      open_mapping = [[C-T]],
+      shading_factor = 2,
+      direction = "float",
+      float_opts = {
+        border = "curved",
+        highlights = { border = "Normal", background = "Normal" },
+      },
+    },
+  },
 }
