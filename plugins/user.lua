@@ -94,7 +94,7 @@ return {
       vim.api.nvim_set_keymap("n", "<C-Z>", "<cmd>ZenMode<CR>", {noremap=true})
       require("zen-mode").setup {
         window = {
-          width = .70,
+          width = 150,
         }
       }
     end,

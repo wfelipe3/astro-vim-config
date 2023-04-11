@@ -28,7 +28,7 @@ return {
       map("n", "lws", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>")
       map("n", "<leader>cl", [[<cmd>lua vim.lsp.codelens.run()<CR>]])
       map("n", "<leader>sh", [[<cmd>lua vim.lsp.buf.signature_help()<CR>]])
-      map("n", "<leader>lrn", "<cmd>lua vim.lsp.buf.rename()<CR>")
+      map("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<CR>")
       map("n", "<leader>lf", "<cmd>lua vim.lsp.buf.formatting()<CR>")
       map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
       map("n", "<leader>ws", '<cmd>lua require"metals".hover_worksheet()<CR>')
