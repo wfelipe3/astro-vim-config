@@ -92,19 +92,26 @@ return {
     event = "BufRead",
     config = function()
       vim.api.nvim_set_keymap("n", "<C-Z>", "<cmd>ZenMode<CR>", {noremap=true})
+      require("zen-mode").setup {
+        window = {
+          width = .70,
+        }
+      }
     end,
   },
   {
     "akinsho/toggleterm.nvim",
-    opts = {
-      size = 10,
-      open_mapping = [[C-T]],
-      shading_factor = 2,
-      direction = "float",
-      float_opts = {
-        border = "curved",
-        highlights = { border = "Normal", background = "Normal" },
-      },
-    },
+    config = function()
+      require("toggleterm").setup {
+        open_mapping = [[<C-A>]],
+        size = 10,
+        shading_factor = 2,
+        direction = "float",
+        float_opts = {
+          border = "curved",
+          highlights = { border = "Normal", background = "Normal" },
+        },
+      }
+    end,
   },
 }
