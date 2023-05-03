@@ -116,4 +116,21 @@ return {
       }
     end,
   },
+  {
+    "folke/twilight.nvim",
+    lazy = false,
+    config = function()
+      require("twilight").setup {
+      }
+    end,
+  },
+  {
+    "tversteeg/registers.nvim",
+    name= "registers",
+    keys = {
+		  { "\"",    mode = { "n", "v" } },
+		  { "<C-R>", mode = "i" }
+	  },
+	  cmd = "Registers",
+  },
 }
