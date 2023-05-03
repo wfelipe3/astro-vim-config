@@ -41,15 +41,7 @@ return {
   {
     "chaoren/vim-wordmotion",
     event = "BufRead",
-  },
-  {
-    "itchyny/vim-cursorword",
-    enabled = false,
-    event = "BufRead",
-  },
-  {
-    "inkarkat/vim-ReplaceWithRegister",
-    event = "BufRead",
+    enabled = true,
   },
   {
     "kurkale6ka/vim-pairs",
@@ -57,10 +49,6 @@ return {
   },
   {
     "rhysd/clever-f.vim",
-    event = "BufRead",
-  },
-  {
-    "gaving/vim-textobj-argument",
     event = "BufRead",
   },
   {
@@ -79,6 +67,20 @@ return {
   {
     "phaazon/hop.nvim",
     event = "BufRead",
+    config = function()
+      require'hop'.setup()
+
+      local api = vim.api
+      local cmd = vim.cmd
+
+      local function map(mode, lhs, rhs, opts)
+        local options = { noremap = true }
+        if opts then options = vim.tbl_extend("force", options, opts) end
+        api.nvim_set_keymap(mode, lhs, rhs, options)
+      end
+
+      map('n', '<leader>w', "<cmd>HopWord<cr>")
+    end,
   },
   {
     "Mohammed-Taher/AdvancedNewFile.nvim",

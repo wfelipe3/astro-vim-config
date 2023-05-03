@@ -26,11 +26,11 @@ return {
       map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>")
       map("n", "lds", "<cmd>lua vim.lsp.buf.document_symbol()<CR>")
       map("n", "lws", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>")
-      map("n", "<leader>cl", [[<cmd>lua vim.lsp.codelens.run()<CR>]])
-      map("n", "<leader>sh", [[<cmd>lua vim.lsp.buf.signature_help()<CR>]])
+      map("n", "<leader>lc", [[<cmd>lua vim.lsp.codelens.run()<CR>]])
+      map("n", "<leader>lsh", [[<cmd>lua vim.lsp.buf.signature_help()<CR>]])
       map("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<CR>")
       map("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format()<CR>")
-      map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
+      -- map("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>")
       map("n", "<leader>ws", '<cmd>lua require"metals".hover_worksheet()<CR>')
       map("n", "<leader>aa", [[<cmd>lua vim.diagnostic.setqflist()<CR>]])                 -- all workspace diagnostics
       map("n", "<leader>ae", [[<cmd>lua vim.diagnostic.setqflist({severity = "E"})<CR>]]) -- all workspace errors
