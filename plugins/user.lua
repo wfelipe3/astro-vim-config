@@ -79,7 +79,10 @@ return {
         api.nvim_set_keymap(mode, lhs, rhs, options)
       end
 
-      map('n', '<leader>w', "<cmd>HopWord<cr>")
+      map('n', '<leader>ww', "<cmd>HopWord<cr>")
+      map('n', '<leader>wc', "<cmd>HopChar1<cr>")
+      map('n', '<leader>wl', "<cmd>HopLine<cr>")
+      map('n', '<leader>wf', "<cmd>HopPattern<cr>")
     end,
   },
   {
@@ -132,5 +135,9 @@ return {
 		  { "<C-R>", mode = "i" }
 	  },
 	  cmd = "Registers",
+  },
+  {
+    "mg979/vim-visual-multi",
+    lazy = false,
   },
 }
