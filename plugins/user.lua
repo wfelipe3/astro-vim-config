@@ -79,10 +79,10 @@ return {
         api.nvim_set_keymap(mode, lhs, rhs, options)
       end
 
-      map('n', '<leader>ww', "<cmd>HopWord<cr>")
-      map('n', '<leader>wc', "<cmd>HopChar1<cr>")
-      map('n', '<leader>wl', "<cmd>HopLine<cr>")
-      map('n', '<leader>wf', "<cmd>HopPattern<cr>")
+      map('n', '<leader>hw', "<cmd>HopWord<cr>")
+      map('n', '<leader>hh', "<cmd>HopChar1<cr>")
+      map('n', '<leader>hl', "<cmd>HopLine<cr>")
+      map('n', '<leader>hf', "<cmd>HopPattern<cr>")
     end,
   },
   {
@@ -140,4 +140,8 @@ return {
     "mg979/vim-visual-multi",
     lazy = false,
   },
+  {
+    "goolord/alpha-nvim",
+    enabled = false,
+  }
 }
