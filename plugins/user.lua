@@ -5,6 +5,7 @@ return {
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
+    enabled = false,
     config = function()
       require("lsp_signature").setup()
     end,
@@ -15,20 +16,21 @@ return {
   },
   "EdenEast/nightfox.nvim",
   "dracula/vim",
-  "morhetz/gruvbox",
-  "tomasr/molokai",
-  "sonph/onehalf",
-  "chriskempson/base16-vim",
-  "gosukiwi/vim-atom-dark",
-  "rakr/vim-one",
-  "mhartington/oceanic-next",
-  "drewtempelmeyer/palenight.vim",
-  "kyoz/purify",
+  -- "morhetz/gruvbox",
+  -- "tomasr/molokai",
+  -- "sonph/onehalf",
+  -- "chriskempson/base16-vim",
+  -- "gosukiwi/vim-atom-dark",
+  -- "rakr/vim-one",
+  -- "mhartington/oceanic-next",
+  -- "drewtempelmeyer/palenight.vim",
+  -- "kyoz/purify",
   -- "embark-theme/vim",
   "Olical/conjure",
   {
     "justinmk/vim-sneak",
     event = "BufRead",
+    enabled = false,
   },
   { 
     "tpope/vim-surround",
@@ -59,11 +61,13 @@ return {
       vim.g.copilot_no_tab_map = true
       vim.g.copilot_assume_mapped = true
       vim.api.nvim_set_keymap("i", "<C-C>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+      vim.api.nvim_set_keymap("n", "<C-C>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
     end,
   },
   {
     "bounceme/poppy.vim",
     lazy = false,
+    enabled = false,
   },
   {
     "phaazon/hop.nvim",
@@ -163,6 +167,6 @@ return {
   },
   {
     "nvim-treesitter/playground",
-    lazy = false,
+    event = "BufRead",
   }
 }
