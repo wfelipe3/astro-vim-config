@@ -84,10 +84,10 @@ return {
         api.nvim_set_keymap(mode, lhs, rhs, options)
       end
 
-      map('n', '<leader>hw', "<cmd>HopWord<cr>")
-      map('n', '<leader>hh', "<cmd>HopChar1<cr>")
-      map('n', '<leader>hl', "<cmd>HopLine<cr>")
-      map('n', '<leader>hf', "<cmd>HopPattern<cr>")
+      map('n', 'hw', "<cmd>HopWord<cr>")
+      map('n', 'hh', "<cmd>HopChar1<cr>")
+      map('n', 'hl', "<cmd>HopLine<cr>")
+      map('n', 'hf', "<cmd>HopPattern<cr>")
 
 
       local hop = require('hop')
@@ -142,6 +142,7 @@ return {
   },
   {
     "folke/twilight.nvim",
+    enabled=false,
     lazy = false,
     config = function()
       require("twilight").setup {
