@@ -26,7 +26,28 @@ return {
   -- "drewtempelmeyer/palenight.vim",
   -- "kyoz/purify",
   -- "embark-theme/vim",
-  "Olical/conjure",
+  {
+    "Olical/conjure",
+    event = "BufRead",
+    enabled = true
+  },
+  {
+    "radenling/vim-dispatch-neovim",
+    event = "BufRead", 
+    enabled = true
+  },
+  {
+    "clojure-vim/vim-jack-in",
+    event = "BufRead",
+    dependencies = { "denling/vim-dispatch-neovim" },
+    enabled = true
+  },
+  {
+    "m00qek/baleia.nvim",
+    version = "1.4.0", 
+    event = "BufRead", 
+    enabled = true
+  },
   {
     "justinmk/vim-sneak",
     event = "BufRead",
