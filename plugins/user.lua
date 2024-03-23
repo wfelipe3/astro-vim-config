@@ -194,5 +194,5 @@ return {
   {
     "chrisgrieser/nvim-various-textobjs",
     event = "BufRead", 
-  }
+    opts = { useDefaultKeymaps = true }, }
 }
