@@ -39,7 +39,7 @@ return {
   {
     "clojure-vim/vim-jack-in",
     event = "BufRead",
-    dependencies = { "denling/vim-dispatch-neovim" },
+    dependencies = { "radenling/vim-dispatch-neovim" },
     enabled = true
   },
   {
@@ -190,5 +190,9 @@ return {
   {
     "nvim-treesitter/playground",
     event = "BufRead",
+  },
+  {
+    "chrisgrieser/nvim-various-textobjs",
+    event = "BufRead", 
   }
 }
