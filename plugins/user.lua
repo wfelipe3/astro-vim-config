@@ -60,15 +60,17 @@ return {
   { 
     "michaeljsmith/vim-indent-object",
     event = "BufRead", 
+    enabled = false,
   },
   {
     "chaoren/vim-wordmotion",
     event = "BufRead",
-    enabled = true,
+    enabled = false,
   },
   {
     "kurkale6ka/vim-pairs",
     event = "BufRead",
+    enabled = false,
   },
   {
     "rhysd/clever-f.vim",
@@ -131,7 +133,7 @@ return {
     "Mohammed-Taher/AdvancedNewFile.nvim",
     event = "BufRead",
     config = function()
-      vim.api.nvim_set_keymap("n", "<C-n>", "<cmd>AdvancedNewFile<CR>", {noremap=true})
+      vim.api.nvim_set_keymap("n", "<C-f>", "<cmd>AdvancedNewFile<CR>", {noremap=true})
     end,
   },
   {
@@ -194,5 +196,6 @@ return {
   {
     "chrisgrieser/nvim-various-textobjs",
     event = "BufRead", 
-    opts = { useDefaultKeymaps = true }, }
+    opts = { useDefaultKeymaps = true }, 
+  },
 }
