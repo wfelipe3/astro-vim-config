@@ -16,6 +16,18 @@ return {
   },
   "EdenEast/nightfox.nvim",
   "dracula/vim",
+  "atelierbram/Base2Tone-nvim",
+  {
+    'jesseleite/nvim-noirbuddy',
+    dependencies = {
+      { 'tjdevries/colorbuddy.nvim' }
+    },
+    lazy = false,
+    priority = 1000,
+    opts = {
+      -- All of your `setup(opts)` will go here
+    },
+  },
   -- "morhetz/gruvbox",
   -- "tomasr/molokai",
   -- "sonph/onehalf",
