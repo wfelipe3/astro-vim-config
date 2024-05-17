@@ -119,10 +119,10 @@ return {
         api.nvim_set_keymap(mode, lhs, rhs, options)
       end
 
-      map('n', 'hw', "<cmd>HopWord<cr>")
-      map('n', 'hh', "<cmd>HopChar1<cr>")
-      map('n', 'hl', "<cmd>HopLine<cr>")
-      map('n', 'hf', "<cmd>HopPattern<cr>")
+      map('n', 'mm', "<cmd>HopWord<cr>")
+      map('n', 'mc', "<cmd>HopChar1<cr>")
+      map('n', 'ml', "<cmd>HopLine<cr>")
+      map('n', 'mf', "<cmd>HopPattern<cr>")
 
 
       local hop = require('hop')
