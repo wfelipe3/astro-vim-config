@@ -13,15 +13,15 @@ return {
         api.nvim_set_keymap(mode, lhs, rhs, options)
       end
 
-      map("n", "mm", [[<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>]])
-      map("n", "ma", [[<cmd>lua require("harpoon.mark").add_file()<CR>]])
-      map("n", "mn", [[<cmd>lua require("harpoon.ui").nav_next()<CR>]])
-      map("n", "mp", [[<cmd>lua require("harpoon.ui").nav_prev()<CR>]])
-      map("n", "m1", [[<cmd>lua require("harpoon.ui").nav_file(1)<CR>]])
-      map("n", "m2", [[<cmd>lua require("harpoon.ui").nav_file(2)<CR>]])
-      map("n", "m3", [[<cmd>lua require("harpoon.ui").nav_file(3)<CR>]])
-      map("n", "m4", [[<cmd>lua require("harpoon.ui").nav_file(4)<CR>]])
-      map("n", "m5", [[<cmd>lua require("harpoon.ui").nav_file(5)<CR>]])
+      map("n", "hh", [[<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>]])
+      map("n", "ha", [[<cmd>lua require("harpoon.mark").add_file()<CR>]])
+      map("n", "hn", [[<cmd>lua require("harpoon.ui").nav_next()<CR>]])
+      map("n", "hp", [[<cmd>lua require("harpoon.ui").nav_prev()<CR>]])
+      map("n", "h1", [[<cmd>lua require("harpoon.ui").nav_file(1)<CR>]])
+      map("n", "h2", [[<cmd>lua require("harpoon.ui").nav_file(2)<CR>]])
+      map("n", "h3", [[<cmd>lua require("harpoon.ui").nav_file(3)<CR>]])
+      map("n", "h4", [[<cmd>lua require("harpoon.ui").nav_file(4)<CR>]])
+      map("n", "h5", [[<cmd>lua require("harpoon.ui").nav_file(5)<CR>]])
     end,
   },
 }

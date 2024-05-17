@@ -16,6 +16,7 @@ return {
   },
   "EdenEast/nightfox.nvim",
   "dracula/vim",
+  "Mofiqul/dracula.nvim",
   "atelierbram/Base2Tone-nvim",
   {
     'jesseleite/nvim-noirbuddy',
@@ -119,8 +120,9 @@ return {
         api.nvim_set_keymap(mode, lhs, rhs, options)
       end
 
-      map('n', 'mm', "<cmd>HopWord<cr>")
-      map('n', 'mc', "<cmd>HopChar1<cr>")
+      map('n', 'mw', "<cmd>HopWord<cr>")
+      map('n', 'mm', "<cmd>HopChar1<cr>")
+      map('n', 'mb', "<cmd>HopChar2<cr>")
       map('n', 'ml', "<cmd>HopLine<cr>")
       map('n', 'mf', "<cmd>HopPattern<cr>")
 
