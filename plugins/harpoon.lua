@@ -4,6 +4,7 @@ return {
     branch = "harpoon2",
     dependencies = {"nvim-lua/plenary.nvim"},
     lazy = false,
+    enabled = true,
     config = function(_, opts)
       -- local api = vim.api
       -- local cmd = vim.cmd
@@ -29,17 +30,17 @@ return {
       harpoon:setup()
       -- REQUIRED
 
-      vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
+      vim.keymap.set("n", "ha", function() harpoon:list():add() end)
       -- vim.keymap.set("n", "<leader>h", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
-      vim.keymap.set("n", "<leader>h1", function() harpoon:list():select(1) end)
-      vim.keymap.set("n", "<leader>h2", function() harpoon:list():select(2) end)
-      vim.keymap.set("n", "<leader>h3", function() harpoon:list():select(3) end)
-      vim.keymap.set("n", "<leader>h4", function() harpoon:list():select(4) end)
+      vim.keymap.set("n", "h1", function() harpoon:list():select(1) end)
+      vim.keymap.set("n", "h2", function() harpoon:list():select(2) end)
+      vim.keymap.set("n", "h3", function() harpoon:list():select(3) end)
+      vim.keymap.set("n", "h4", function() harpoon:list():select(4) end)
 
       -- Toggle previous & next buffers stored within Harpoon list
-      vim.keymap.set("n", "<leader>hp", function() harpoon:list():prev() end)
-      vim.keymap.set("n", "<leader>hn", function() harpoon:list():next() end)
+      vim.keymap.set("n", "hp", function() harpoon:list():prev() end)
+      vim.keymap.set("n", "hn", function() harpoon:list():next() end)
 
       -- basic telescope configuration
       local conf = require("telescope.config").values
@@ -59,7 +60,7 @@ return {
           }):find()
       end
 
-      vim.keymap.set("n", "<leader>hh", function() toggle_telescope(harpoon:list()) end,
+      vim.keymap.set("n", "hh", function() toggle_telescope(harpoon:list()) end,
           { desc = "Open harpoon window" })
 
     end,
